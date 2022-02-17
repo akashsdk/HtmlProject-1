@@ -144,6 +144,72 @@
         
     </table>
 
+    <table class="tra">
+        <tr>
+            <th>
+                <u>Name</u>
+            </th>
+            <th>
+                <u>Stteet</u>
+            </th>
+            <th>
+                <u>City</u>
+            </th>
+        </tr>
+
+        <tr id="name">
+
+        </tr>
+
+        <script>
+            (function(){
+                fetch("http://192.168.0.105:4000/data").then(function(res){
+                    res.json().then(function(data){
+                        var docs = document.getElementById("name");
+                        data.forEach(function(doc,i) {
+                            docs.insertAdjacentHTML('afterend',"<tr> <td>" +doc.customer_name+ "</td><td>" 
+                                +doc.customer_street+ "</td><td>" +doc.customer_city+ "</td> </tr>");
+                        });
+                    });
+                });
+            })();
+        </script>
+        
+    </table>
+
+    <table class="tra">
+        <tr>
+            <th>
+                <u>Name</u>
+            </th>
+            <th>
+                <u>Stteet</u>
+            </th>
+            <th>
+                <u>City</u>
+            </th>
+        </tr>
+
+        <tr id="name">
+
+        </tr>
+
+        <script>
+            (function(){
+                fetch("http://192.168.0.105:4000/data").then(function(res){
+                    res.json().then(function(data){
+                        var docs = document.getElementById("name");
+                        data.forEach(function(doc,i) {
+                            docs.insertAdjacentHTML('afterend',"<tr> <td>" +doc.customer_name+ "</td><td>" 
+                                +doc.customer_street+ "</td><td>" +doc.customer_city+ "</td> </tr>");
+                        });
+                    });
+                });
+            })();
+        </script>
+        
+    </table>
+
 </body>
 
 </html>
