@@ -38,6 +38,26 @@
 }
 .div5{
     width: auto;
-    height: 50px;
-    background-color: aqua;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 5px;
+}
+.div6{
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 5px;
+}
+.div7{
+    height: 22px;
+    width: 2px;
+    margin-left: 5px;
+    background-color: black;
+}
+.h2{
+    margin-top: -8px;
+    margin-left: 10px;
+}
+.div8{
+    margin-left: 25px;
 }
