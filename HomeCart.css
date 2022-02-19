@@ -1,25 +1,24 @@
 .div1{
-    height: 600px;
+    height: 250px;
     width: 450px;
-    background-color: aquamarine;
-    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
     margin-left: 100px;
     padding-top: 20px;
 }
 .div2{
     height: 200px;
     width: 400px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(91, 230, 248);
     border-radius: 13px;
     margin-left: 25px;
     margin-top: 00px;
     padding-top: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 1, 0.19);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 1, 0.19);
 }
 .div3{
     height: 130px;
     width: 390px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(91, 230, 248);
     border-radius: 13px;
     margin-left: 5px;
     display: flex;
@@ -30,6 +29,7 @@
     border-radius: 40px;
     margin-top: 25px;
     margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 1, 0.19);
 }
 .div4{
     height: auto;
@@ -38,10 +38,11 @@
 }
 .div5{
     width: auto;
-    height: 40px;
-    background-color: rgb(255, 255, 255);
+    height: 28px;
+    background-color: rgb(201, 247, 247);
     display: flex;
     margin-top: 5px;
+    
 }
 .div6{
     font-size: 20px;
@@ -60,4 +61,11 @@
 }
 .div8{
     margin-left: 25px;
+    display: flex;
+}
+.div9{
+    height: auto;
+    width: auto;
+    margin-left: 150px;
+    margin-top: 10px;
 }
