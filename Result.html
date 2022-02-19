@@ -28,6 +28,10 @@
                 <input type="submit" value="Check">
             </form>
         </div>
+        <div class="div3a">
+            <p>Name : Saiful</p>
+            <p>GPA : 5.00</p>
+        </div>
     </div>
 
     <div id="profile" class="diva">
@@ -48,7 +52,7 @@
                 <input type="text" id="fname" name="fname" style="margin-left: 18px;"><br><br>
                 <label for="fname">GPA:</label>
                 <input type="number" id="fname" name="fname" style="margin-left: 25px;"><br><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="myFunction()">
             </form>
         </div>
     </div>
@@ -64,12 +68,11 @@
             document.getElementById("profile").style.display = "block";
         }
 
-        function openNav() {
-            document.getElementById("myNav").style.width = "50%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
+        
+    </script>
+    <script>
+        function myFunction() {
+            alert("Your Data Save in Surver");
         }
     </script>
 </body>
