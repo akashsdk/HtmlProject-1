@@ -1,5 +1,48 @@
-.div{
-    height: 550px;
-    width: 400px;
+.div {
+    height          : 550px;
+    width           : 400px;
     background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.diva {
+    height          : 550px;
+    width           : 400px;
+    background-color: aqua;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.div1 {
+    height          : 75px;
+    width           : auto;
+    background-color: rgb(255, 255, 255);
+    display         : flex;
+    justify-content : center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.div2 {
+    height          : 52px;
+    width           : 5px;
+    margin-top      : 13px;
+    background-color: black;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border          : none;
+    color           : white;
+    padding         : 10px 14px;
+    font-size       : 16px;
+    border-radius: 10px;
+    cursor          : pointer;
+    height          : 50px;
+    margin          : 13px;
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.div3{
+    height: auto;
+    width: auto;
+    justify-content: center;
+    margin-left: 100px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,69 @@
     <link rel="stylesheet" href="./Result.css" />
     <script src="./javascriot.js"></script>
 </head>
+
 <body>
-    <div class="div">
+    <div id="home" class="div">
+        <div class="div1">
+            <button class="btn" type="button" onclick="home()">Check Result</button>
+            <div class="div2"></div>
+            <button class="btn" type="button" onclick="profile()">Post Result</button>
+        </div>
+        <div class="div3">
+            <h1> <u>Result Checker</u></h1>
+
+            <form action="/action_page.php">
+                <label for="fname">Reg. No:</label>
+                <input type="number" id="fname" name="fname"><br><br>
+                <label for="lname">Roll. No:</label>
+                <input type="number" id="lname" name="lname"><br><br>
+                <input type="submit" value="Check">
+            </form>
+        </div>
     </div>
+
+    <div id="profile" class="diva">
+        <div class="div1">
+            <button class="btn" type="button" onclick="home()">Check Result</button>
+            <div class="div2"></div>
+            <button class="btn" type="button" onclick="profile()">Post Result</button>
+        </div>
+        <div class="div3">
+            <h1> <u>Post Result</u></h1>
+
+            <form action="/action_page.php">
+                <label for="fname">Reg. No:</label>
+                <input type="number" id="fname" name="fname"><br><br>
+                <label for="lname">Roll. No:</label>
+                <input type="number" id="lname" name="lname"><br><br>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname" style="margin-left: 18px;"><br><br>
+                <label for="fname">GPA:</label>
+                <input type="number" id="fname" name="fname" style="margin-left: 25px;"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function home() {
+            document.getElementById("home").style.display = "block";
+            document.getElementById("profile").style.display = "none";
+        }
+        function profile() {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("profile").style.display = "block";
+        }
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
+
 </html>
