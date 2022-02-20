@@ -20,18 +20,32 @@
         <div class="div3">
             <h1> <u>Result Checker</u></h1>
 
-            <form action="/action_page.php">
+            <form action="https://scientistx.herokuapp.com/data" method="get">
                 <label for="fname">Reg. No:</label>
                 <input type="number" id="fname" name="fname"><br><br>
                 <label for="lname">Roll. No:</label>
                 <input type="number" id="lname" name="lname"><br><br>
-                <input type="submit" value="Check">
+                <input type="submit" value="Check" onclick="check()" >
             </form>
         </div>
-        <div class="div3a">
-            <p>Name : Saiful</p>
-            <p>GPA : 5.00</p>
-        </div>
+        <script>
+            (function check() {
+                fetch("https://scientistx.herokuapp.com/data").then(function (res) {
+                    res.json().then(function (data) {
+                        var docs = document.getElementById("name");
+                        data.forEach(function (doc, i) {
+                            docs.insertAdjacentHTML('afterend', "<div class='div3a'><p> Name :"+doc.name+ "</p><p>GPA :" +doc.gpa+"</p></div>");
+    
+                        });
+    
+    
+    
+                    });
+                })
+    
+            })();
+        </script>
+        
     </div>
 
     <div id="profile" class="diva">
