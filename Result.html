@@ -43,15 +43,15 @@
         <div class="div3">
             <h1> <u>Post Result</u></h1>
 
-            <form action="/action_page.php">
+            <form action="https://scientistx.herokuapp.com/save" method="post">
                 <label for="fname">Reg. No:</label>
-                <input type="number" id="fname" name="fname"><br><br>
+                <input type="number" id="fname" name="reg_no"><br><br>
                 <label for="lname">Roll. No:</label>
-                <input type="number" id="lname" name="lname"><br><br>
+                <input type="number" id="lname" name="roll_no"><br><br>
                 <label for="fname">Name:</label>
-                <input type="text" id="fname" name="fname" style="margin-left: 18px;"><br><br>
-                <label for="fname">GPA:</label>
-                <input type="number" id="fname" name="fname" style="margin-left: 25px;"><br><br>
+                <input type="text" id="fname" name="name" style="margin-left: 18px;"><br><br>
+                <label for="fname">CPA:</label>
+                <input type="number" id="fname" name="gpa" style="margin-left: 25px;"><br><br>
                 <input type="submit" value="Submit" onclick="myFunction()">
             </form>
         </div>
@@ -75,6 +75,7 @@
             alert("Your Data Save in Surver");
         }
     </script>
+    
 </body>
 
 </html>
