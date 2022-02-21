@@ -20,32 +20,42 @@
         <div class="div3">
             <h1> <u>Result Checker</u></h1>
 
-            <form action="https://scientistx.herokuapp.com/data" method="get">
+            <div id="div">
                 <label for="fname">Reg. No:</label>
                 <input type="number" id="fname" name="fname"><br><br>
                 <label for="lname">Roll. No:</label>
                 <input type="number" id="lname" name="lname"><br><br>
-                <input type="submit" value="Check" onclick="check()" >
-            </form>
+                <input id="submit" type="submit" value="Check" onclick="check()">
+            </div>
         </div>
         <script>
-            (function check() {
+            var fname = document.getElementById('fname');
+            var lname = document.getElementById('lname');
+            var div=document.getElementById('div');
+            var j=0;
+            function check() {
+                if(j==1){
+                    return
+                }
+                j=1;
+                let t=0;
                 fetch("https://scientistx.herokuapp.com/data").then(function (res) {
                     res.json().then(function (data) {
-                        var docs = document.getElementById("name");
-                        data.forEach(function (doc, i) {
-                            docs.insertAdjacentHTML('afterend', "<div class='div3a'><p> Name :"+doc.name+ "</p><p>GPA :" +doc.gpa+"</p></div>");
-    
-                        });
-    
-    
-    
+                        for(var i=0;i<data.length;i++){
+                            if(data[i].reg_no==fname.value && data[i].roll_no==lname.value){
+                                div.insertAdjacentHTML('afterend', "<div class='div3a'><p> Name :"+data[i].name+ "</p><p>GPA :" +data[i].gpa+"</p></div>");
+                                t=1;
+                                break
+                            }
+                        }
+                        if(t==0){
+                            alert('Invalid','opps');
+                        }
                     });
                 })
-    
-            })();
+            }
         </script>
-        
+
     </div>
 
     <div id="profile" class="diva">
@@ -59,13 +69,13 @@
 
             <form action="https://scientistx.herokuapp.com/save" method="post">
                 <label for="fname">Reg. No:</label>
-                <input type="number" id="fname" name="reg_no"><br><br>
+                <input type="number" name="reg_no"><br><br>
                 <label for="lname">Roll. No:</label>
-                <input type="number" id="lname" name="roll_no"><br><br>
+                <input type="number" name="roll_no"><br><br>
                 <label for="fname">Name:</label>
-                <input type="text" id="fname" name="name" style="margin-left: 18px;"><br><br>
+                <input type="text" name="name" style="margin-left: 18px;"><br><br>
                 <label for="fname">CPA:</label>
-                <input type="number" id="fname" name="gpa" style="margin-left: 25px;"><br><br>
+                <input type="number" name="gpa" style="margin-left: 25px;"><br><br>
                 <input type="submit" value="Submit" onclick="myFunction()">
             </form>
         </div>
@@ -82,15 +92,15 @@
             document.getElementById("profile").style.display = "block";
         }
 
-        
+
     </script>
     <script>
         function myFunction() {
             alert("Your Data Save in Surver");
         }
     </script>
-    
-    
+
+
 </body>
 
 </html>
