@@ -104,16 +104,43 @@
 
             <div id="div">
                 <label for="fname">Reg. No: </label>
-                <input type="number"  name="dfname"><br><br>
+                <input type="number"  name="dname"><br><br>
                 <label for="lname">Roll. No: </label>
-                <input type="number" name="dlname"><br><br>
-                <input id="submit" type="submit" value="Check" onclick="check()">
+                <input type="number" name="ename"><br><br>
+                <input id="submit" type="submit" value="Check" onclick="dcheck()">
             </div>
         </div>
 
-        <div class="deletediv">
-            <div class="deletediv2"> <h1 style="margin-left: 10px;">Akash</h1></div>
-        </div>
+
+        <script>
+            var dname = document.getElementById('dname');
+            var ename = document.getElementById('ename');
+            var diva=document.getElementById('diva');
+            var a=0;
+            function dcheck() {
+                if(a==1){
+                    return
+                }
+                a=1;
+                let b=0;
+                fetch("https://scientistx.herokuapp.com/data").then(function (resD) {
+                    resD.json().then(function (data) {
+                        for(var i=0;i<data.length;i++){
+                            if(data[i].reg_no==dname.value && data[i].roll_no==ename.value){
+                                diva.insertAdjacentHTML('afterend', "<div class='deletediv'> <h1 style='margin-left: 10px;''>"+data[i].name+"</h1></div>");
+                                b=1;
+                                break
+                            }
+                        }
+                        if(b==0){
+                            alert('Invalid','opps');
+                        }
+                    });
+                })
+            }
+        </script>
+
+        
 
         
     </div>
