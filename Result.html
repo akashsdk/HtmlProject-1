@@ -17,6 +17,8 @@
             <button class="btn" type="button" onclick="home()">Check Result</button>
             <div class="div2"></div>
             <button class="btn" type="button" onclick="profile()">Post Result</button>
+            <div class="div2"></div>
+            <button class="btn" type="button" onclick="Delete()">Delete Result</button>
         </div>
 
         <div class="div3">
@@ -67,6 +69,8 @@
             <button class="btn" type="button" onclick="home()">Check Result</button>
             <div class="div2"></div>
             <button class="btn" type="button" onclick="profile()">Post Result</button>
+            <div class="div2"></div>
+            <button class="btn" type="button" onclick="Delete()">Delete Result</button>
         </div>
         <div class="div3">
             <h1> <u>Post Result</u></h1>
@@ -86,19 +90,54 @@
     </div>
 
 
+
+    <div id="Delete" class="diva">
+        <div class="div1">
+            <button class="btn" type="button" onclick="home()">Check Result</button>
+            <div class="div2"></div>
+            <button class="btn" type="button" onclick="profile()">Post Result</button>
+            <div class="div2"></div>
+            <button class="btn" type="button" onclick="Delete()">Delete Result</button>
+        </div>
+        <div class="div3">
+            <h1> <u>Delete Result</u></h1>
+
+            <div id="div">
+                <label for="fname">Reg. No: </label>
+                <input type="number"  name="dfname"><br><br>
+                <label for="lname">Roll. No: </label>
+                <input type="number" name="dlname"><br><br>
+                <input id="submit" type="submit" value="Check" onclick="check()">
+            </div>
+        </div>
+
+        <div class="deletediv">
+            <div class="deletediv2"> <h1 style="margin-left: 10px;">Akash</h1></div>
+        </div>
+
+        
+    </div>
+
+
     <script>
         function home() {
             document.getElementById("home").style.display = "block";
             document.getElementById("profile").style.display = "none";
+            document.getElementById("Delete").style.display = "none";
         }
         function profile() {
             document.getElementById("home").style.display = "none";
             document.getElementById("profile").style.display = "block";
+            document.getElementById("Delete").style.display = "none";
+        }
+        function Delete() {
+            document.getElementById("Delete").style.display = "block";
+            document.getElementById("home").style.display = "none";
+            document.getElementById("profile").style.display = "none";
         }
 
-
     </script>
-    
+
     <script>
         function myFunction() {
             alert("Your Data Save in Surver");
