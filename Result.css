@@ -77,3 +77,20 @@
     border-radius: 10px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+.divsex{
+    margin: 200px;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.divsex:hover{
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background-color: aquamarine;
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
