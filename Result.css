@@ -85,6 +85,8 @@
     background-color: blueviolet;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 .divsex:hover{
     height: 200px;
@@ -100,4 +102,6 @@
     background-color: azure;
     border-radius: 20px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-left: 50px;
 }
