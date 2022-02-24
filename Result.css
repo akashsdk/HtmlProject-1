@@ -2,22 +2,24 @@
     height          : 550px;
     width           : 400px;
     background-color: aqua;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .diva {
     height          : 550px;
     width           : 400px;
     background-color: aqua;
-    display: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display         : none;
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .div1 {
     height          : 75px;
     width           : auto;
     background-color: rgb(255, 255, 255);
     display         : flex;
     justify-content : center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -34,74 +36,113 @@
     color           : white;
     padding         : 10px 14px;
     font-size       : 16px;
-    border-radius: 10px;
+    border-radius   : 10px;
     cursor          : pointer;
     height          : 50px;
     margin          : 13px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.btn:hover{
+
+.btn:hover {
     background-color: rgb(30, 229, 255);
     border          : none;
     color           : white;
     padding         : 10px 14px;
     font-size       : 16px;
-    border-radius: 10px;
+    border-radius   : 10px;
     cursor          : pointer;
     height          : 50px;
     margin          : 13px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.div3{
-    height: auto;
-    width: auto;
+
+.div3 {
+    height         : auto;
+    width          : auto;
     justify-content: center;
-    margin-left: 100px;
+    margin-left    : 100px;
 }
-.div3a{
-    height: auto;
-    width: 150px;
-    margin-top: 100px;
-    justify-content: center;
-    margin-left: 40px;
+
+.div3a {
+    height          : auto;
+    width           : 150px;
+    margin-top      : 100px;
+    justify-content : center;
+    margin-left     : 40px;
     background-color: rgb(233, 232, 232);
-    border-radius: 5px;
+    border-radius   : 5px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.deletediv{
-    height: auto;
-    width: 200px;
+
+.deletediv {
+    height          : auto;
+    width           : 200px;
     background-color: azure;
-    margin-top: 30px;
-    margin-left: 125px;
-    border-radius: 10px;
+    margin-top      : 30px;
+    margin-left     : 125px;
+    border-radius   : 10px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.divsex{
-    margin: 200px;
-    height: 200px;
-    width: 200px;
+.divsex {
+    margin          : 200px;
+    height          : 200px;
+    width           : 200px;
     background-color: blueviolet;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    border-radius   : 10px;
+    display         : flex;
+    justify-content : center;
 }
-.divsex:hover{
-    height: 200px;
-    width: 200px;
-    margin: 200px;
+
+.divsex:hover {
+    height          : 200px;
+    width           : 200px;
+    margin          : 200px;
     background-color: aquamarine;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius   : 10px;
 }
-.divx{
-    height: 75px;
-    width: 75px;
+
+.divx {
+    height          : 75px;
+    width           : 75px;
     background-color: azure;
-    border-radius: 20px;
+    border-radius   : 20px;
     box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 50px;
-    
+    margin-top      : 50px;
+
+}
+
+.loader {
+    border           : 16px solid #f3f3f3;
+    border-radius    : 50%;
+    border-top       : 16px solid blue;
+    border-right     : 16px solid green;
+    border-bottom    : 16px solid red;
+    border-left      : 16px solid pink;
+    width            : 120px;
+    height           : 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation        : spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
