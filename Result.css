@@ -155,3 +155,10 @@
         transform: rotate(360deg);
     }
 }
+
+.divxx{
+    height: auto;
+    width: auto;
+    display: flex;
+    
+}
