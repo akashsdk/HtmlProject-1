@@ -24,9 +24,9 @@
 .divb{
     height: 250px;
     width: 290px;
-    background-color: bisque;
+    background-color: rgb(250, 222, 189);
     border-radius: 10px;
-    background-image: url('Img\Hacker pic.png');
+    background-image: image("Img\Hacker pic.png");
 }
 .img{
     height: 105px;
