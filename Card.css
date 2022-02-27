@@ -26,7 +26,10 @@
     width: 290px;
     background-color: rgb(250, 222, 189);
     border-radius: 10px;
-    
+    background-image: url("./Img//Hacker\ pic.png");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 .img{
     height: 105px;
