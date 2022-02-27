@@ -5,12 +5,13 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     box-shadow: 2px 4px 8px;
-    
+    border-radius: 10px;
 }
 .diva{
     height: 250px;
     width: 150px;
     background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 .divc{
     height: 250px;
@@ -24,6 +25,7 @@
     height: 250px;
     width: 290px;
     background-color: bisque;
+    border-radius: 10px;
 }
 .img{
     height: 105px;
