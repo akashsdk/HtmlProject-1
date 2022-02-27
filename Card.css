@@ -3,4 +3,15 @@
     width: 450px;
     margin: 100px;
     background-color: aquamarine;
+    
+}
+.diva{
+    height: 248px;
+    width: 100px;
+    background-color: beige;
+}
+.divb{
+    height: 248px;
+    width: 350px;
+    background-color: bisque;
 }
