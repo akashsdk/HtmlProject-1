@@ -3,7 +3,8 @@
     width: 450px;
     margin: 100px;
     background-color: aquamarine;
-    
+    justify-content: center;
+    display: flex;
 }
 .diva{
     height: 248px;
@@ -12,6 +13,7 @@
 }
 .divb{
     height: 248px;
-    width: 350px;
+    width: 300px;
+    margin-left: 10px;
     background-color: bisque;
 }
