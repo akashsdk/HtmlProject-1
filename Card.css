@@ -34,6 +34,12 @@
     border-radius: 60px;
     box-shadow: 0px 4px 8px;
 }
+.divd{
+    background-color: aqua;
+}
+.divd:hover{
+
+}
 .h4{
     margin-left: 5px;
 }
