@@ -51,3 +51,7 @@
     color: aqua;
     margin-left: 5px;
 }
+.h3:hover{
+    color: rgb(1, 105, 190);
+    margin-left: 5px;
+}
