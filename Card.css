@@ -3,12 +3,11 @@
     width: 450px;
     margin: 100px;
     background-color: aquamarine;
-    justify-content: center;
     display: flex;
 }
 .diva{
-    height: 248px;
-    width: 100px;
+    height: 250px;
+    width: 150px;
     background-color: beige;
 }
 .divb{
