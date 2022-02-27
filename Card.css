@@ -48,8 +48,9 @@
     color: blueviolet;
 }
 .h3{
-    color: aqua;
+    color: rgb(0, 238, 238);
     margin-left: 5px;
+    margin-top: -15px;
 }
 .h3:hover{
     color: rgb(1, 105, 190);
