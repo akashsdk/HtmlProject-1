@@ -1,64 +1,73 @@
-.maindiv{
-    height: 250px;
-    width: 450px;
-    margin: 100px;
+.maindiv {
+    height          : 250px;
+    width           : 450px;
+    margin          : 100px;
     background-color: rgb(255, 255, 255);
-    display: flex;
-    box-shadow: 2px 4px 8px;
-    border-radius: 10px;
-}
-.diva{
-    height: 250px;
-    width: 150px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-}
-.divc{
-    height: 250px;
-    width: 10px;
-    background-color:rgb(0, 255, 170);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+    display         : flex;
+    box-shadow      : 2px 4px 8px;
+    border-radius   : 10px;
 }
 
-.divb{
-    height: 250px;
-    width: 290px;
-    background-color: rgb(250, 222, 189);
-    border-radius: 10px;
-    background-image: url("./Img//Hacker\ pic.png");
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+.diva {
+    height          : 250px;
+    width           : 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius   : 10px;
 }
-.img{
-    height: 105px;
-    width: 105px;
-    margin: 20px;
+
+.divc {
+    height          : 250px;
+    width           : 10px;
+    background-color: rgb(0, 255, 170);
+    box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.divb {
+    height               : 250px;
+    width                : 290px;
+    background-color     : rgb(250, 222, 189);
+    border-radius        : 10px;
+    background-image     : url("./Img//Hacker\ pic.png");
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+.img {
+    height       : 105px;
+    width        : 105px;
+    margin       : 20px;
     border-radius: 60px;
-    box-shadow: 0px 4px 8px;
+    box-shadow   : 0px 4px 8px;
 }
-.divd{
+
+.divd {
     background-color: rgb(255, 255, 255);
 }
-.divd:hover{
+
+.divd:hover {
     color: blueviolet;
 }
-.h4{
+
+.h4 {
     margin-left: 5px;
-    font-style: italic;
+    font-style : italic;
 }
-.h4:hover{
+
+.h4:hover {
     margin-left: 5px;
-    color: blueviolet;
+    color      : blueviolet;
 }
-.h3{
-    color: rgb(1, 105, 190);
+
+.h3 {
+    color      : rgb(1, 105, 190);
     margin-left: 5px;
-    margin-top: -20px;
+    margin-top : -20px;
 }
-.h3:hover{
+
+.h3:hover {
     margin-left: 5px;
-    color: rgb(0, 238, 238);
+    color      : rgb(0, 238, 238);
 
 }
