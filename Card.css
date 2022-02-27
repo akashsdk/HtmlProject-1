@@ -10,9 +10,15 @@
     width: 150px;
     background-color: beige;
 }
+.divc{
+    height: 250px;
+    width: 10px;
+    background-color:rgb(24, 255, 178);
+    
+}
+
 .divb{
     height: 250px;
-    width: 300px;
-    margin-left: 10px;
+    width: 290px;
     background-color: bisque;
 }
